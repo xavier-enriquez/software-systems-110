@@ -365,39 +365,53 @@
         <h1>Section 3: Student Demonstration</h1>
 
         <p>
-            <div>
-<h1>HTML Fundamentals — Notes</h1>
-<p>Software Systems (152-110-270) · Lecture 05 · Fall 2026</p>
-</div>
+           <div>
+        <h1>Section 2: My HTML Notes</h1>
 
-<div>
-<h2>What is HTML?</h2>
-<ul>
-    <li>HTML = HyperText Markup Language</li>
-    <li>It's what gives a webpage its structure</li>
-    <li>Tells the browser what's on the page and how it's organized</li>
-    <li><strong>NOT a programming language!!</strong> It's a markup language (just labels/defines page stuff, no logic)</li>
-</ul>
-</div>
+        <p>
+            Software Systems (152-110-270) · Lecture 05 · Fall 2026
+        </p>
 
-<div>
-<h2>HTML Document Structure</h2>
-<p>Every HTML page follows the same basic setup:</p>
-<ul>
-    <li><code>&lt;!DOCTYPE html&gt;</code> → tells the browser "hey, this is HTML"</li>
-    <li><code>&lt;html&gt;</code> → holds the whole webpage</li>
-    <li><code>&lt;head&gt;</code> → info about the page (not shown as main content), like the title</li>
-    <li><code>&lt;body&gt;</code> → the stuff people actually see in the browser</li>
-</ul>
-</div>
 
-<div>
-<h2>The Smallest Website (Example)</h2>
-<ul>
-    <li>Title goes in the head (shows on the browser tab)</li>
-    <li>h1 + p are in the body so they show on the page</li>
-</ul>
-<pre><code>&lt;!DOCTYPE html&gt;
+        <h2>What is HTML?</h2>
+
+        <p>
+            HTML stands for HyperText Markup Language. It gives a webpage
+            its structure and tells the browser what is on the page and
+            how it is organized.
+        </p>
+
+        <p>
+            HTML is <strong>not</strong> a programming language. It is a
+            markup language, which means it only labels and defines content.
+            It does not have any logic.
+        </p>
+
+
+        <h2>HTML Document Structure</h2>
+
+        <p>
+            Every HTML page follows the same basic setup:
+        </p>
+
+        <p>
+            <code>&lt;!DOCTYPE html&gt;</code> tells the browser the page is HTML.
+            <code>&lt;html&gt;</code> holds the whole webpage.
+            <code>&lt;head&gt;</code> holds info about the page, like the title,
+            that is not shown as main content.
+            <code>&lt;body&gt;</code> holds the content people actually see.
+        </p>
+
+
+        <h2>The Smallest Website</h2>
+
+        <p>
+            The title goes in the head and shows on the browser tab.
+            The h1 and p go in the body so they show on the page.
+        </p>
+
+        <pre>
+&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -407,125 +421,208 @@
     &lt;h1&gt;Hello, World!&lt;/h1&gt;
     &lt;p&gt;This is the simplest possible web page.&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-</div>
+&lt;/html&gt;
+        </pre>
 
-<div>
-<h2>Elements &amp; Tags</h2>
-<ul>
-    <li>HTML is built from elements</li>
-    <li>Most elements have an opening tag and a closing tag</li>
-    <li>Content goes between them; the closing tag has the slash /</li>
-    <li>Some don't need a closing tag (like <code>&lt;br&gt;</code>)</li>
-</ul>
-<pre><code>&lt;p&gt; My Paragraph &lt;/p&gt;</code></pre>
-</div>
 
-<div>
-<h2>Headings: &lt;h1&gt; to &lt;h6&gt;</h2>
-<ul>
-    <li>Used to organize the content on the page</li>
-    <li>h1 = most important / biggest · h6 = least important</li>
-    <li>Helps people skim and find sections fast</li>
-</ul>
-<pre><code>&lt;h1&gt; Heading 1 &lt;/h1&gt;</code></pre>
-</div>
+        <h2>Elements &amp; Tags</h2>
 
-<div>
-<h2>Paragraphs: &lt;p&gt;</h2>
-<ul>
-    <li>For normal blocks of text</li>
-    <li>Each paragraph gets its own p tag</li>
-</ul>
-<pre><code>&lt;p&gt; This is a paragraph. &lt;/p&gt;</code></pre>
-</div>
+        <p>
+            HTML is built from elements. Most elements have an opening tag
+            and a closing tag, and the content goes between them. The
+            closing tag has a slash <code>/</code>.
+        </p>
 
-<div>
-<h2>Line Breaks: &lt;br&gt;</h2>
-<ul>
-    <li>Moves text to a new line</li>
-    <li>Does NOT make a new paragraph, just breaks the line</li>
-</ul>
-<pre><code>Hello&lt;br&gt;World</code></pre>
-<p>Result:<br>Hello<br>World</p>
-</div>
+        <p>
+            Example:
+            <code>&lt;p&gt;My Paragraph&lt;/p&gt;</code>
+        </p>
 
-<div>
-<h2>Links: &lt;a&gt;</h2>
-<ul>
-    <li>Let you go to another webpage</li>
-    <li>"a" stands for anchor</li>
-    <li>href = where the link goes (destination)</li>
-    <li>Links are one of the core features of the web</li>
-</ul>
-<pre><code>&lt;a href="http://www.example.com"&gt;Visit Example Website&lt;/a&gt;</code></pre>
-<p>Result: <a href="http://www.example.com">Visit Example Website</a></p>
-</div>
+        <p>
+            Some elements do not need a closing tag, like
+            <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>,
+            and <code>&lt;input&gt;</code>.
+        </p>
 
-<div>
-<h2>Images: &lt;img&gt;</h2>
-<ul>
-    <li>Shows pictures on the page</li>
-    <li>src = where the image file is located</li>
-    <li>alt = text description of the image (good for accessibility + shows if image doesn't load)</li>
-    <li>Can set width and height too</li>
-</ul>
-<pre><code>&lt;img src="./assets/image.jpg" alt="HTML Webpage" width="300" height="200"&gt;</code></pre>
-<p>Result:</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" width="200" height="200">
-</div>
 
-<div>
-<h2>Divs: &lt;div&gt;</h2>
-<ul>
-    <li>A container used to group HTML content together</li>
-    <li>Doesn't show anything by itself, it just organizes stuff</li>
-    <li>Every section of these notes is wrapped in its own div</li>
-</ul>
-<pre><code>&lt;div&gt;
+        <h2>Headings: &lt;h1&gt;–&lt;h6&gt;</h2>
+
+        <p>
+            Headings organize the content on the page and help people skim
+            and find sections fast. <code>&lt;h1&gt;</code> is the most
+            important and biggest. <code>&lt;h6&gt;</code> is the least
+            important.
+        </p>
+
+        <p>
+            Example:
+            <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+        </p>
+
+        <h3>Heading 3</h3>
+
+
+        <h2>Paragraphs: &lt;p&gt;</h2>
+
+        <p>
+            Paragraphs are used for normal blocks of text. Each paragraph
+            gets its own <code>&lt;p&gt;</code> tag.
+        </p>
+
+        <p>
+            Example:
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        </p>
+
+        <p>
+            This is a paragraph.
+        </p>
+
+
+        <h2>Line Breaks: &lt;br&gt;</h2>
+
+        <p>
+            The <code>&lt;br&gt;</code> element moves text to a new line.
+            It does <strong>not</strong> make a new paragraph, it just
+            breaks the line.
+        </p>
+
+        <p>
+            Example:
+            <code>Hello&lt;br&gt;World</code>
+        </p>
+
+        <p>
+            Hello<br>
+            World
+        </p>
+
+
+        <h2>Links: &lt;a&gt;</h2>
+
+        <p>
+            The <code>&lt;a&gt;</code> element lets you go to another
+            webpage. The "a" stands for anchor. The <code>href</code>
+            attribute is where the link goes. Links are one of the core
+            features of the web.
+        </p>
+
+        <p>
+            Example:
+            <code>&lt;a href="http://www.example.com"&gt;Visit Example Website&lt;/a&gt;</code>
+        </p>
+
+        <p>
+            <a href="http://www.example.com">Visit Example Website</a>
+        </p>
+
+
+        <h2>Images: &lt;img&gt;</h2>
+
+        <p>
+            The <code>&lt;img&gt;</code> element shows pictures on the page.
+            The <code>src</code> attribute is where the image file is located.
+            The <code>alt</code> attribute is a text description of the image,
+            which helps with accessibility and shows if the image doesn't load.
+            You can also set the <code>width</code> and <code>height</code>.
+        </p>
+
+        <p>
+            Example:
+            <code>&lt;img src="./assets/image.jpg" alt="HTML Webpage" width="300" height="200"&gt;</code>
+        </p>
+
+        <img src="./assets/image.jpg" alt="HTML Webpage" width="300" height="200">
+
+
+        <h2>Containers: &lt;div&gt;</h2>
+
+        <p>
+            A <code>&lt;div&gt;</code> groups HTML content together. It does
+            not show anything by itself, it just organizes sections of the page.
+        </p>
+
+        <p>
+            Example:
+        </p>
+
+        <pre>
+&lt;div&gt;
     &lt;h2&gt;My Section&lt;/h2&gt;
-    &lt;p&gt;Stuff in this section.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-</div>
+    &lt;p&gt;This content is grouped together.&lt;/p&gt;
+&lt;/div&gt;
+        </pre>
 
-<div>
-<h2>Text Inputs: &lt;input type="text"&gt;</h2>
-<ul>
-    <li>Makes a box where the user can type</li>
-    <li>No closing tag</li>
-    <li>placeholder = gray hint text inside the box</li>
-</ul>
-<pre><code>&lt;input type="text" placeholder="Type your name"&gt;</code></pre>
-<p>Result: <input type="text" placeholder="Type your name"></p>
-</div>
 
-<div>
-<h2>Checkboxes: &lt;input type="checkbox"&gt;</h2>
-<ul>
-    <li>Makes a box the user can check or uncheck</li>
-    <li>Good for yes/no choices or to-do lists</li>
-    <li>No closing tag</li>
-</ul>
-<pre><code>&lt;input type="checkbox"&gt; I finished my notes</code></pre>
-<p>Result: <input type="checkbox"> I finished my notes</p>
-</div>
+        <h2>Text Input</h2>
 
-<div>
-<h2>Buttons: &lt;button&gt;</h2>
-<ul>
-    <li>Makes something you can click</li>
-    <li>Can be hooked up to JavaScript later to actually do stuff</li>
-    <li>HTML can make the button even if it doesn't do anything yet</li>
-</ul>
-<pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
-<p>Result: <button>Click Me</button></p>
-</div>
+        <p>
+            <code>&lt;input type="text"&gt;</code> makes a box where the user
+            can type. The <code>placeholder</code> attribute adds gray hint
+            text inside the box.
+        </p>
 
-<div>
-<h2>What I Learned</h2>
-<p>HTML is the structure of every webpage. It uses tags to tell the browser what each piece of content is, like a heading, paragraph, link, or image. Every page has the same basic setup with html, head, and body.</p>
-<p>I also learned that some tags need a closing tag and some don't (like br, img, and input), and that attributes like href, src, and alt give tags extra information.</p>
-</div>
+        <p>
+            Example:
+            <code>&lt;input type="text" placeholder="Type your name"&gt;</code>
+        </p>
+
+        <p>
+            <input type="text" placeholder="Type your name">
+        </p>
+
+
+        <h2>Checkbox Input</h2>
+
+        <p>
+            <code>&lt;input type="checkbox"&gt;</code> makes a box the user
+            can check or uncheck. It is good for yes/no choices or to-do lists.
+        </p>
+
+        <p>
+            Example:
+            <code>&lt;input type="checkbox"&gt; I finished my notes</code>
+        </p>
+
+        <p>
+            <input type="checkbox"> I finished my notes
+        </p>
+
+
+        <h2>Buttons: &lt;button&gt;</h2>
+
+        <p>
+            The <code>&lt;button&gt;</code> element makes something you can
+            click. HTML can make the button even if it doesn't do anything yet.
+            Later it can be hooked up to JavaScript to actually do stuff.
+        </p>
+
+        <p>
+            Example:
+            <code>&lt;button&gt;Click Me&lt;/button&gt;</code>
+        </p>
+
+        <p>
+            <button>Click Me</button>
+        </p>
+
+
+        <h2>What I Learned</h2>
+
+        <p>
+            HTML is the structure of every webpage. It uses tags to tell the
+            browser what each piece of content is, like a heading, paragraph,
+            link, or image. Every page has the same basic setup with html,
+            head, and body.
+        </p>
+
+        <p>
+            I also learned that some tags need a closing tag and some don't,
+            and that attributes like href, src, and alt give tags extra
+            information.
+        </p>
+
+    </div>
         </p>
 
     </div>
